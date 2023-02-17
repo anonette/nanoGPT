@@ -11,9 +11,14 @@ Because the code is so simple, it is very easy to hack to your needs, train new 
 
 ## install
 
+```
+conda install pytorch torchvision torchaudio pytorch-cuda=11.8 -c pytorch-nightly -c nvidia
+pip install tiktoken wandb tqdm transformers
+
+```
 Dependencies:
 
-- [pytorch](https://pytorch.org) <3
+- [pytorch](https://pytorch.org) <3 - `pip3 install --pre torch torchvision torchaudio --index-url https://download.pytorch.org/whl/nightly/cu118`
 - [numpy](https://numpy.org/install/) <3
 - `pip install transformers` for huggingface transformers <3 (to load GPT-2 checkpoints)
 - `pip install datasets` for huggingface datasets <3 (if you want to download + preprocess OpenWebText)
