@@ -1,11 +1,21 @@
 
 # nanoGPT
 
-![nanoGPT](assets/nanogpt.jpg)
+**note from fork** - 
+changes from upstream
+  - search replaced the Shakespeare referances with denisa's book. 
+  - clearfied the install instructions.
+  - ommited the images bellow (for now). 
+  - the input was prepered by using pythons `pdftotext`. 
+i used a 12Gb nvidia 3060 to run this.
+
+---
+
+`![nanoGPT](assets/nanogpt.jpg)`
 
 The simplest, fastest repository for training/finetuning medium-sized GPTs. It is a rewrite of [minGPT](https://github.com/karpathy/minGPT) that prioritizes teeth over education. Still under active development, but currently the file `train.py` reproduces GPT-2 (124M) on OpenWebText, running on a single 8XA100 40GB node in about 4 days of training. The code itself is plain and readable: `train.py` is a ~300-line boilerplate training loop and `model.py` a ~300-line GPT model definition, which can optionally load the GPT-2 weights from OpenAI. That's it.
 
-![repro124m](assets/gpt2_124M_loss.png)
+`![repro124m](assets/gpt2_124M_loss.png)`
 
 Because the code is so simple, it is very easy to hack to your needs, train new models from scratch, or finetune pretrained checkpoints (e.g. biggest one currently available as a starting point would be the GPT-2 1.3B model from OpenAI).
 
